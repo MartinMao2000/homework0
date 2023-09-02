@@ -1,0 +1,115 @@
+---
+title: "homework0(4)"
+author: "MM2000"
+format: html
+editor: visual
+---
+
+## Question 1-2
+
+```{r}
+# Define the coefficients
+a <- 1 
+b <- -1
+c <- -2
+
+# Calculate the discriminant
+discriminant <- b^2 - 4*a*c
+
+# Check for real roots
+if (discriminant > 0) {
+  x1 <- (-b + sqrt(discriminant)) / (2*a)
+  x2 <- (-b - sqrt(discriminant)) / (2*a)
+  solutions <- c(x1, x2)
+  print("The solutions are:")
+} else if (discriminant == 0) {
+  x1 <- -b / (2*a)
+  solutions <- c(x1)
+  print("The solution is:")
+} else {
+  solutions <- c()  # empty vector for complex roots
+  print("There is no solution.")
+}
+
+solutions
+```
+
+```{r}
+# a graph of f(x) for x (-5,5)
+x <- seq(-5, 5, length = 300)
+plot(x, a*x^2 + b*x + c, type = "l")
+abline(h = 0, lty = 2)
+```
+
+## Question 3
+
+```{r}
+# Define the coefficients
+a <- 1 
+b <- 2
+c <- 5
+
+# Calculate the discriminant
+discriminant <- b^2 - 4*a*c
+
+# Check for real roots
+if (discriminant > 0) {
+  x1 <- (-b + sqrt(discriminant)) / (2*a)
+  x2 <- (-b - sqrt(discriminant)) / (2*a)
+  solutions <- c(x1, x2)
+  print("The solutions are:")
+} else if (discriminant == 0) {
+  x1 <- -b / (2*a)
+  solutions <- c(x1)
+  print("The solution is:")
+} else {
+  solutions <- c()  # empty vector for complex roots
+  print("There is no solutions.")
+}
+
+solutions
+
+```
+
+```{r}
+# a graph of f(x) for x (-5,5)
+x <- seq(-5, 5, length = 300)
+plot(x, a*x^2 + b*x + c, type = "l")
+abline(h = 0, lty = 2)
+```
+
+## Question 4
+
+```{r}
+# Define the coefficients
+a <- 1 
+b <- 3
+c <- 2
+
+# Calculate the discriminant
+discriminant <- b^2 - 4*a*c
+
+# Check for real roots
+if (discriminant > 0) {
+  x1 <- (-b + sqrt(discriminant)) / (2*a)
+  x2 <- (-b - sqrt(discriminant)) / (2*a)
+  solutions <- c(x1, x2)
+  print("The solutions are:")
+} else if (discriminant == 0) {
+  x1 <- -b / (2*a)
+  solutions <- c(x1)
+  print("The solution is:")
+} else {
+  solutions <- c()  # empty vector for complex roots
+  print("There is no solutions.")
+}
+
+solutions
+```
+
+```{r}
+# a graph of f(x) for x (-5,5)
+x <- seq(-5, 5, length = 300)
+plot(x, a*x^2 + b*x + c, type = "l")
+abline(h = 0, lty = 2)
+```
